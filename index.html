@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title> Presevi Industrial solutions </title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/bootstrap-theme.min.css" />
+    <link rel="stylesheet" href="css/dataurl_pctr.css" />
+    <link rel="stylesheet" href="css/font-awesome.min.css" />
+    <link rel="stylesheet" href="css/site.css" />
+    <script type="text/javascript" src="js/jquery-2.2.3.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/pace.min.js"></script>
+
+    <style>
+        #home-carousel .carousel-inner img {
+            height: 60vh;
+            width: 100%;
+            object-fit: cover;
+            overflow: hidden;
+        }
+        
+        .carousel-caption1 {
+            /*			background: linear-gradient(to bottom right, rgba(224, 46, 46, 0.71), rgba(217, 79, 79, 0.68)); */
+            background: linear-gradient(to bottom right, rgba(234, 18, 18, 0.77), rgba(195, 2, 2, 0.68));
+            background: linear-gradient(to bottom right, rgba(255, 152, 0, 0.78), rgba(255, 152, 0, 0.74));
+            /*background: linear-gradient(to bottom, rgba(18, 113, 234, 0.77), rgba(31, 86, 117, 0.68));
+			background: linear-gradient(to bottom, rgba(18, 144, 234, 0.64), rgba(0, 74, 115, 0.68));*/
+            text-align: left;
+            font-size: 100%;
+            color: white;
+            position: absolute;
+            bottom: 10%;
+            width: 60%;
+            left: 10%;
+            height: 30vh;
+            z-index: 10;
+            padding: 20px;
+            overflow: hidden;
+        }
+        
+        .carousel-caption1 h1 {
+            /*background: rgba(115, 115, 115, 0.11);*/
+            text-shadow: 0px 0.5px 1px 1px solid black;
+            font-size: 180%;
+            margin-top: 0;
+        }
+        
+        .carousel-caption-custom2 {
+            left: 5%;
+            right: 50%;
+            bottom: 5%;
+        }
+        
+        .carousel-caption-text {}
+        
+        .carousel-custom-control {
+            width: 5%;
+        }
+        
+        .para-click-text {
+            position: absolute;
+            right: 5px;
+            bottom: 5px;
+            font-style: italic;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-harvest navbar-static-top ">
+        <div class="navbar-inner">
+            <div class="container-fluid">
+                <!-- Brand and toggle get grouped for better mobile display -->
+
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+
+                    <a class="navbar-brand logo" href="index.html">
+                        <img src="images/presevi-logo.png" alt="">
+                    </a>
+                    <a class="navbar-brand brand" href="index.html"><span>Presevi Industrial Solutions</span>
+                </a>
+                </div>
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class=" navbar-collapse collapse navbar-right" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav">
+                        <li>
+                            <a href="#">About</a>
+                        </li>
+                        <li>
+                            <a href="#">Services</a>
+                        </li>
+                        <li>
+                            <a href="#">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+
+    <div id="home-carousel" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators hidden">
+            <li data-target="#home-carousel" data-slide-to="0" class=""></li>
+            <li data-target="#home-carousel" data-slide-to="1" class=""></li>
+            <li data-target="#home-carousel" data-slide-to="2" class="active"></li>
+        </ol>
+        <div class="carousel-inner" role="list-box">
+            <div class="item">
+
+                <img class="first-slide" src="images/greenCircuit.jpg" alt="First Slide">
+                <a href="products.html">
+                    <div class="container">
+
+                        <div class="carousel-caption1 carousel-caption-custom">
+                            <h1>Why Presevi?</h1>
+                            <div class="carousel-caption-text">
+                                <p>We build reliable and cost effective mechatronic control systems with energy efficient algorithm. Indigenous capability to build the required hardware, embedded software and GUI for the system. Knowledgeable, strong and confident team.</p>
+                                <p class="para-click-text">Click to know more about us...</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </a>
+            </div>
+            <div class="item">
+
+                <img class="second-slide" src="images/blueCircuit.jpg" alt="Second Slide">
+                <a href="products.html">
+                    <div class="container">
+                        <div class="carousel-caption1 carousel-caption-custom">
+                            <h1>Services We Offer</h1>
+                            <div class="carousel-caption-text">
+                                <p>We provide R&amp;D design, Manufacturing and After Sales Service. Electronic hardware design with FTA considering IEC norms. Embedded Conroller Software development. Well documented manufacturing, user and service manuals.</p>
+                                <p class="para-click-text">click to know about our services...</p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="item active">
+
+                <img class="third-slide" src="images/aircond.jpg" alt="Third Slide">
+                <a href="products.html">
+                    <div class="container">
+                        <div class="carousel-caption1 carousel-caption-custom">
+                            <h1>We are the Pioneer in a/c controller </h1>
+                            <div class="carousel-caption-text">
+                                <p>Yes, you heard it right! We are the first Indian company to manufacture remote controls for air conditioners. It is a true mechatronic desing with microcontrollers. Instrumentation, Power electronics, Energy saving features etc. included. Designed using mixed signal processing. Cleared for EMI/EMC by testing as per IEC standards. </p>
+                                <p class="para-click-text">Click to view our products catalog...</p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+        </div>
+
+        <a class="left carousel-control carousel-custom-control" href="#home-carousel" role="button" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left"> </span>
+        </a>
+        <a class="right carousel-control carousel-custom-control" href="#home-carousel" role="button" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right"> </span>
+        </a>
+
+
+    </div>
+
+    <div class="container-fluid">
+        <div class="row content-area">
+            <h1>Products Categories</h1>
+
+            <a href="products.html" class="col-lg-3 col-md-6 col-sm-12 col-xs-12">
+                <div class="content-box content-one">
+                    <img src="images/product-header/hvac1.jpg" class="img-responsive" />
+                    <div class="content-desc">
+                        <p class="desc-heading">Heating Ventilation and Air Conditioning (HVAC)</p>
+                        <p class="desc-writeup">Enter brief description here about Heating Ventilation and Air Conditioning (HVAC)</p>
+
+                    </div>
+                </div>
+            </a>
+            <a href="products.html" class="col-lg-3 col-md-6 col-sm-12 col-xs-12">
+                <div class="content-box content-two">
+                    <img src="images/product-header/bms1.jpg" class="img-responsive" />
+                    <div class="content-desc">
+                        <p class="desc-heading">Building Management Systems (BMS)</p>
+                        <p class="desc-writeup">Enter brief description here about Building Management Systems (BMS)</p>
+
+                    </div>
+                </div>
+            </a>
+            <a href="products.html" class="col-lg-3 col-md-6 col-sm-12 col-xs-12">
+                <div class="content-box content-three">
+                    <img src="images/product-header/hospitality1.jpg" class="img-responsive" />
+                    <div class="content-desc">
+                        <p class="desc-heading">Hospitality Sectors</p>
+                        <p class="desc-writeup">Enter brief description here about Hospitality Sectors</p>
+                    </div>
+                </div>
+            </a>
+            <a href="products.html" class="col-lg-3 col-md-6 col-sm-12 col-xs-12">
+                <div class="content-box content-four">
+                    <img src="images/product-header/Energy2.jpg" class="img-responsive" />
+                    <div class="content-desc">
+                        <p class="desc-heading">Energy Saving Sectors</p>
+                        <p class="desc-writeup">Enter brief description here about Energy Saving Sectors</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+
+
+    </div>
+
+    <ul class="fixed_buttons hidden">
+        <li>
+            <a href="/views/contact-us.html" class="book_demo"></a>
+        </li>
+        <li>
+            <a href="#" class="open_popup email_us" data-popup="email_popup"></a>
+        </li>
+        <li>
+            <a class="downloads" href="/view/whitepapers.html"></a>
+        </li>
+    </ul>
+
+</body>
+
+<footer data-view="views/footer" data-active-view="true">
+    <!-- Footer -->
+    <div class="home-footer" style="background-color: orange;">
+        <div class="home-wrapper">
+            <div class="row">
+                <div class="col-xs-6 col-sm-6 col-md-3 col-lg-3">
+                    <div class="osLight footer-header">Company</div>
+                    <ul class="footer-nav pb20">
+                        <li><a href="#">AboutUs</a></li>
+                        <li><a href="#">Lines Of Businesses</a></li>
+                        <li><a href="#">Media &amp; Communication</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Terms &amp; Privacy</a></li>
+                    </ul>
+                </div>
+                <div class="col-xs-6 col-sm-6 col-md-3 col-lg-3">
+                    <!--<div class="osLight footer-header">Discover</div>
+                    <ul class="footer-nav pb20">
+                        <li><a href="#">Become a Member</a></li>
+                        <li><a href="#">Sign In</a></li>
+                    </ul>-->
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+                    <div class="osLight footer-header">Get in Touch</div>
+                    <ul class="footer-nav pb20">
+                        <li>
+                            <p>Email ID: admin@presevi.in ; marketing@presevi.in</p>
+                        </li>
+                        <li class="footer-address osLight">
+                            <p>#16, Pillaiyar Kovil street,</p>
+                            <p>
+                                Kanagam, Taramani-P.O</p>
+                            <p>
+                                Chennai-600 113, INDIA</p>
+                            <p>
+                                Phone : +91 44-22542564</p>
+                            <p>
+                                Mobile : (0)9382150289 / 9087012560</p>
+                            <p>
+                                Fax : +91 44-22542562</p>
+                            <p>
+                        </li>
+                        
+                    </ul>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+                    <div class="osLight footer-header">Subscribe to Our Newsletter</div>
+                    <form role="form">
+                        <div class="form-group">
+                            <input type="email" class="form-control" placeholder="Email Address">
+                        </div>
+                        <div class="form-group">
+                            <a href="#" class="btn btn-primary">Subscribe</a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="copyright">Site powered by
+                <br> Absolute Zero Technologies.</div>
+        </div>
+    </div>
+</footer>
+
+
+</html>
