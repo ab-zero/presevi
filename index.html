@@ -17,14 +17,14 @@
         #home-carousel .carousel-inner img {
             height: 60vh;
             width: 100%;
-            object-fit: cover;
+            /*            object-fit: cover;*/
             overflow: hidden;
         }
         
         .carousel-caption1 {
             /*			background: linear-gradient(to bottom right, rgba(224, 46, 46, 0.71), rgba(217, 79, 79, 0.68)); */
             background: linear-gradient(to bottom right, rgba(234, 18, 18, 0.77), rgba(195, 2, 2, 0.68));
-            background: linear-gradient(to bottom right, rgba(255, 152, 0, 0.78), rgba(255, 152, 0, 0.74));
+            /*            background: linear-gradient(to bottom right, rgba(255, 152, 0, 0.78), rgba(255, 152, 0, 0.74));*/
             /*background: linear-gradient(to bottom, rgba(18, 113, 234, 0.77), rgba(31, 86, 117, 0.68));
 			background: linear-gradient(to bottom, rgba(18, 144, 234, 0.64), rgba(0, 74, 115, 0.68));*/
             text-align: left;
@@ -32,9 +32,9 @@
             color: white;
             position: absolute;
             bottom: 10%;
-            width: 60%;
-            left: 10%;
-            height: 30vh;
+            width: 40%;
+            right: 10%;
+            height: 40vh;
             z-index: 10;
             padding: 20px;
             overflow: hidden;
@@ -64,6 +64,43 @@
             right: 5px;
             bottom: 5px;
             font-style: italic;
+        }
+        
+        .col-xs-5ths,
+        .col-sm-5ths,
+        .col-md-5ths,
+        .col-lg-5ths {
+            position: relative;
+            min-height: 1px;
+            padding-right: 10px;
+            padding-left: 10px;
+        }
+        
+        .col-xs-5ths {
+            width: 20%;
+            float: left;
+        }
+        
+        @media (min-width: 768px) {
+            .col-sm-5ths {
+                width: 20%;
+                float: left;
+            }
+           
+        }
+        
+        @media (min-width: 992px) {
+            .col-md-5ths {
+                width: 20%;
+                float: left;
+            }
+        }
+        
+        @media (min-width: 1200px) {
+            .col-lg-5ths {
+                width: 20%;
+                float: left;
+            }
         }
     </style>
 </head>
@@ -110,21 +147,23 @@
 
     <div id="home-carousel" class="carousel slide" data-ride="carousel">
         <ol class="carousel-indicators hidden">
-            <li data-target="#home-carousel" data-slide-to="0" class=""></li>
+            <li data-target="#home-carousel" data-slide-to="0" class="active"></li>
             <li data-target="#home-carousel" data-slide-to="1" class=""></li>
-            <li data-target="#home-carousel" data-slide-to="2" class="active"></li>
+            <li data-target="#home-carousel" data-slide-to="2" class=""></li>
+            <li data-target="#home-carousel" data-slide-to="3" class=""></li>
+            <li data-target="#home-carousel" data-slide-to="4" class=""></li>
         </ol>
         <div class="carousel-inner" role="list-box">
-            <div class="item">
+            <div class="item active">
 
-                <img class="first-slide" src="images/greenCircuit.jpg" alt="First Slide">
+                <img class="first-slide active" src="images/banner/Energy.png" alt="First Slide">
                 <a href="products.html">
                     <div class="container">
 
                         <div class="carousel-caption1 carousel-caption-custom">
-                            <h1>Why Presevi?</h1>
+                            <h1>Energy</h1>
                             <div class="carousel-caption-text">
-                                <p>We build reliable and cost effective mechatronic control systems with energy efficient algorithm. Indigenous capability to build the required hardware, embedded software and GUI for the system. Knowledgeable, strong and confident team.</p>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi tincidunt ligula vitae elementum aliquam. Suspendisse sollicitudin, sem sed luctus vulputate, velit mauris posuere est, accumsan malesuada orci tortor ut nibh. Donec malesuada ornare velit non posuere. Nam sem elit, suscipit ac ipsum eget, consequat rhoncus turpis. Integer fringilla lectus quis lacus porttitor rutrum. </p>
                                 <p class="para-click-text">Click to know more about us...</p>
                             </div>
                         </div>
@@ -134,28 +173,60 @@
             </div>
             <div class="item">
 
-                <img class="second-slide" src="images/blueCircuit.jpg" alt="Second Slide">
+                <img class="second-slide" src="images/banner/HVAC.png" alt="Second Slide">
                 <a href="products.html">
                     <div class="container">
                         <div class="carousel-caption1 carousel-caption-custom">
-                            <h1>Services We Offer</h1>
+                            <h1>HVAC</h1>
                             <div class="carousel-caption-text">
-                                <p>We provide R&amp;D design, Manufacturing and After Sales Service. Electronic hardware design with FTA considering IEC norms. Embedded Conroller Software development. Well documented manufacturing, user and service manuals.</p>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi tincidunt ligula vitae elementum aliquam. Suspendisse sollicitudin, sem sed luctus vulputate, velit mauris posuere est, accumsan malesuada orci tortor ut nibh. Donec malesuada ornare velit non posuere. Nam sem elit, suscipit ac ipsum eget, consequat rhoncus turpis. Integer fringilla lectus quis lacus porttitor rutrum. </p>
                                 <p class="para-click-text">click to know about our services...</p>
                             </div>
                         </div>
                     </div>
                 </a>
             </div>
-            <div class="item active">
+            <div class="item ">
 
-                <img class="third-slide" src="images/aircond.jpg" alt="Third Slide">
+                <img class="third-slide" src="images/banner/Hospitality.png" alt="Third Slide">
                 <a href="products.html">
                     <div class="container">
                         <div class="carousel-caption1 carousel-caption-custom">
-                            <h1>We are the Pioneer in a/c controller </h1>
+                            <h1>Hospitality</h1>
                             <div class="carousel-caption-text">
-                                <p>Yes, you heard it right! We are the first Indian company to manufacture remote controls for air conditioners. It is a true mechatronic desing with microcontrollers. Instrumentation, Power electronics, Energy saving features etc. included. Designed using mixed signal processing. Cleared for EMI/EMC by testing as per IEC standards. </p>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi tincidunt ligula vitae elementum aliquam. Suspendisse sollicitudin, sem sed luctus vulputate, velit mauris posuere est, accumsan malesuada orci tortor ut nibh. Donec malesuada ornare velit non posuere. Nam sem elit, suscipit ac ipsum eget, consequat rhoncus turpis. Integer fringilla lectus quis lacus porttitor rutrum. </p>
+                                <p class="para-click-text">Click to view our products catalog...</p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="item ">
+
+                <img class="fourth-slide" src="images/banner/Telecom.png" alt="fourth Slide">
+                <a href="products.html">
+                    <div class="container">
+                        <div class="carousel-caption1 carousel-caption-custom">
+                            <h1>Telecom Industry products</h1>
+                            <div class="carousel-caption-text">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi tincidunt ligula vitae elementum aliquam. Suspendisse sollicitudin, sem sed luctus vulputate, velit mauris posuere est, accumsan malesuada orci tortor ut nibh. Donec malesuada ornare velit non posuere. Nam sem elit, suscipit ac ipsum eget, consequat rhoncus turpis. Integer fringilla lectus quis lacus porttitor rutrum. </p>
+                                <p class="para-click-text">Click to view our products catalog...</p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="item ">
+
+                <img class="fifth-slide" src="images/banner/General.png" alt="fifth Slide">
+                <a href="products.html">
+                    <div class="container">
+                        <div class="carousel-caption1 carousel-caption-custom">
+                            <h1>General Products</h1>
+                            <div class="carousel-caption-text">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi tincidunt ligula vitae elementum aliquam. Suspendisse sollicitudin, sem sed luctus vulputate, velit mauris posuere est, accumsan malesuada orci tortor ut nibh. Donec malesuada ornare velit non posuere. Nam sem elit, suscipit ac ipsum eget, consequat rhoncus turpis. Integer fringilla lectus quis lacus porttitor rutrum. </p>
                                 <p class="para-click-text">Click to view our products catalog...</p>
                             </div>
                         </div>
@@ -179,7 +250,17 @@
         <div class="row content-area">
             <h1>Products Categories</h1>
 
-            <a href="products.html" class="col-lg-3 col-md-6 col-sm-12 col-xs-12">
+            <a href="products.html" class="col-lg-5ths col-md-6 col-sm-12 col-xs-12">
+                <div class="content-box content-four">
+                    <img src="images/product-header/Energy2.jpg" class="img-responsive" />
+                    <div class="content-desc">
+                        <p class="desc-heading">Energy Saving Sectors</p>
+                        <p class="desc-writeup">Enter brief description here about Energy Saving Sectors</p>
+                    </div>
+                </div>
+            </a>
+            
+            <a href="products.html" class="col-lg-5ths col-md-6 col-sm-12 col-xs-12">
                 <div class="content-box content-one">
                     <img src="images/product-header/hvac1.jpg" class="img-responsive" />
                     <div class="content-desc">
@@ -189,17 +270,7 @@
                     </div>
                 </div>
             </a>
-            <a href="products.html" class="col-lg-3 col-md-6 col-sm-12 col-xs-12">
-                <div class="content-box content-two">
-                    <img src="images/product-header/bms1.jpg" class="img-responsive" />
-                    <div class="content-desc">
-                        <p class="desc-heading">Building Management Systems (BMS)</p>
-                        <p class="desc-writeup">Enter brief description here about Building Management Systems (BMS)</p>
-
-                    </div>
-                </div>
-            </a>
-            <a href="products.html" class="col-lg-3 col-md-6 col-sm-12 col-xs-12">
+            <a href="products.html" class="col-lg-5ths col-md-6 col-sm-12 col-xs-12">
                 <div class="content-box content-three">
                     <img src="images/product-header/hospitality1.jpg" class="img-responsive" />
                     <div class="content-desc">
@@ -208,12 +279,25 @@
                     </div>
                 </div>
             </a>
-            <a href="products.html" class="col-lg-3 col-md-6 col-sm-12 col-xs-12">
-                <div class="content-box content-four">
-                    <img src="images/product-header/Energy2.jpg" class="img-responsive" />
+            
+            <a href="products.html" class="col-lg-5ths col-md-6 col-sm-12 col-xs-12">
+                <div class="content-box content-two">
+                    <img src="images/product-header/bms1.jpg" class="img-responsive" />
                     <div class="content-desc">
-                        <p class="desc-heading">Energy Saving Sectors</p>
-                        <p class="desc-writeup">Enter brief description here about Energy Saving Sectors</p>
+                        <p class="desc-heading">Telecom Domain</p>
+                        <p class="desc-writeup">Enter brief description here about Telecom</p>
+
+                    </div>
+                </div>
+            </a>
+            
+            
+            <a href="products.html" class="col-lg-5ths col-md-6 col-sm-12 col-xs-12">
+                <div class="content-box content-four">
+                    <img src="images/product-header/bms2.jpg" class="img-responsive" />
+                    <div class="content-desc">
+                        <p class="desc-heading">General Products</p>
+                        <p class="desc-writeup">Enter brief description here about General Products</p>
                     </div>
                 </div>
             </a>
@@ -278,7 +362,7 @@
                                 Fax : +91 44-22542562</p>
                             <p>
                         </li>
-                        
+
                     </ul>
                 </div>
                 <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">

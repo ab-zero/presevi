@@ -350,7 +350,7 @@ body.fixed .wrapper {
     height: 300px;
     box-shadow: 1px 1px 2px 2px rgba(128, 128, 128, 0.4);
     transition: box-shadow 0.8s ease-out 0s, border-color 0.8s ease-out 0s;
-    border-bottom: 5px solid orange;
+    border-top: 5px solid orange;
     border-radius: 1px;
     overflow: hidden;
     margin-bottom: 15px;
@@ -389,7 +389,7 @@ body.fixed .wrapper {
 .content-area .content-box:hover {
     height: 300px;
     box-shadow: 1px 1px 4px 5px rgba(128, 128, 128, 0.4);
-    border-bottom-color: crimson;
+    border-top-color: crimson;
 }
 
 .content-area .content-box:hover .content-desc {
